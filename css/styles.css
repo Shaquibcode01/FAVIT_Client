@@ -103,19 +103,40 @@ body {
 
 /* for mobile  */
 @media (max-width:480px) {
-    .navbar {
-        background-color: rgb(255, 0, 0);
-    }
+
 
     .nav {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav a {
-        color: #ffffff;
+        color: #6aaf45;
+        font: size 1em;
     }
 }
 
 /* for tablet  */
-@media (max-width:960px) {}
+/* @media (max-width:960px) {
+
+} */
+
+
+
+/* ============== start about page ===========  */
+.container {
+    margin: 8rem 1rem;
+}
+
+.about p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6aaf45;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #077bb7;
+    width: fit-content;
+    text-transform: uppercase;
+}
+/* ============== end about page =============  */
