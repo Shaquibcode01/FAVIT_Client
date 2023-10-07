@@ -13,12 +13,15 @@ body {
     height: 5%;
     background-color: #6aaf45;
     text-align: center;
-    text-decoration-color: #ffffff;
+    text-decoration-color: black;
+
 }
 
 .sticky-bar p {
     margin: 0;
     padding: 8px 0;
+    color: white;
+
 }
 
 .navbar {
@@ -97,7 +100,22 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* @media screen {
-    add karna hai 
-    
-} */
+
+/* for mobile  */
+@media (max-width:480px) {
+    .navbar {
+        background-color: rgb(255, 0, 0);
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav a {
+        color: #ffffff;
+    }
+}
+
+/* for tablet  */
+@media (max-width:960px) {}
