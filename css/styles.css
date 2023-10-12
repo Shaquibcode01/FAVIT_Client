@@ -101,29 +101,6 @@ body {
 }
 
 
-/* for mobile  */
-@media (max-width:480px) {
-
-
-    .nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nav a {
-        color: #6aaf45;
-        font: size 1em;
-    }
-}
-
-/* for tablet  */
-/* @media (max-width:960px) {
-
-} */
-
-
 
 /* ============== start about page ===========  */
 .container {
@@ -140,3 +117,31 @@ body {
     text-transform: uppercase;
 }
 /* ============== end about page =============  */
+
+
+/* for mobile  */
+@media (max-width:480px) {
+
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav a {
+        color: #6aaf45;
+        font: size 1em;
+    }
+
+    .about p {
+       margin: 0 auto;
+    }
+
+}
+
+/* for tablet  */
+/* @media (max-width:960px) {
+
+} */
