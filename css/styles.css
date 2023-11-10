@@ -24,7 +24,7 @@ body {
 
 .navbar {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 34px;
   left: 0;
   width: 100%;
@@ -50,7 +50,7 @@ body {
 
 .logo img {
   display: block;
-  position: fixed;
+  position: sticky;
   top: 30px;
   left: 0px;
   width: 15%;
@@ -70,8 +70,8 @@ body {
 }
 
 .menu-icon {
-  display: block;
-  position: fixed;
+  display: inline;
+  position: absolute;
   top: 45px;
   right: 10px;
   cursor: pointer;
@@ -124,6 +124,9 @@ body {
   font-weight: 600;
   color: #077bb7;
 }
+.contents b {
+  color: #68a943;
+}
 
 .contents h3 {
   font-size: 30px;
@@ -135,7 +138,156 @@ body {
   color: #6aaf45;
   font-weight: 600;
 }
+.contents ul {
+  color: green;
+  list-style: none;
+}
+.contents ul li {
+  color: #077bb7;
+  padding: 4px;
+}
+
+.contents ul li::before {
+  content: "\2022";
+  color: #6aaf45;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -2em;
+}
+
+.contents ol li {
+  color: #077bb7;
+}
+
+.contents ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+.contents li::before {
+  content: counter(li);
+  color: #6aaf45;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1em;
+}
+
+.contents li {
+  counter-increment: li;
+}
+
+.trains p:first-letter {
+  text-transform: inherit !important;
+  font-size: 17px;
+  color: #077bb7;
+}
+
 /* ============== end about page =============  */
+
+/* ================= start footer ================ */
+footer {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-start; */
+  margin: 0 1rem;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+footer .left {
+  width: 50%;
+}
+
+.f-logo img {
+  width: 35%;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.footer-link ul {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.footer-link li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.footer-link ul a {
+  /* list-style-type: none; */
+  font-size: 30px;
+  color: #6aaf45 !important;
+  text-decoration: none;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-icon img {
+  width: 55px;
+  height: auto;
+  margin-right: 7px;
+}
+
+footer .right {
+  width: 50%;
+}
+.right{
+  color: #077bb7;
+  width: 10px;
+  height: 10px;
+  text-decoration: underline;
+
+}
+.right h4{
+  width: px;
+
+}
+
+.buttom-bar hr {
+  border-color: #ffffffb3;
+}
+
+.buttom-bar span {
+  font-weight: 600;
+  font-size: 15px;
+  color: #68a943;
+}
+
+.buttom-bar p {
+  margin: 0;
+  padding-top: 5px;
+  color: #077bb7;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.buttom-bar p.copyright span {
+  color: red;
+}
+
+.buttom-bar p.copyright {
+  text-align: center;
+  color: #077bb7;
+  font-weight: 600;
+  padding-bottom: 15px
+}
+/* ================= end footer ================== */
+
 
 /* for mobile  */
 @media (max-width: 480px) {
@@ -148,11 +300,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
   }
 
   .nav a {
     color: #6aaf45;
-    font: size 1em;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 
   .sticky-bar {
