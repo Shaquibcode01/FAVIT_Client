@@ -225,7 +225,7 @@ footer .left {
 
 .footer-link ul a {
   /* list-style-type: none; */
-  font-size: 30px;
+  font-size: 23px;
   color: #6aaf45 !important;
   text-decoration: none;
 }
@@ -254,8 +254,7 @@ footer .right {
 
 }
 .right h4{
-  width: px;
-
+  font-size: 1.5rem;
 }
 
 .buttom-bar hr {
@@ -265,6 +264,10 @@ footer .right {
 .buttom-bar span {
   font-weight: 600;
   font-size: 15px;
+  color: #68a943;
+}
+.buttom-bar span a{
+  text-decoration: none;
   color: #68a943;
 }
 
@@ -286,7 +289,81 @@ footer .right {
   font-weight: 600;
   padding-bottom: 15px
 }
+
+.copyright img {
+  width: 41px;
+  height: auto;
+}
 /* ================= end footer ================== */
+
+
+
+/* Term and condition page start */
+h1 {
+  color: #68a943;
+}
+
+h2 {
+  color:  #68a943;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #077bb7;
+}
+
+ol {
+  margin-left: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  font-weight: bold;
+}
+
+.section > h3 {
+  color: #68a943;
+}
+
+
+
+/* privacy policy start */
+h1 {
+  color: #68a943;
+}
+
+h2 {
+  color:  #68a943;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #077bb7;
+}
+
+ol {
+  margin-left: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  font-weight: bold;
+}
+
+/* privacy policy end */
+
+
+/* Term and condition page end */
+
+
+
+
 
 
 /* for mobile  */
@@ -325,5 +402,7 @@ footer .right {
 
 /* for tablet  */
 /* @media (max-width:960px) {
+  
 
 } */
+
