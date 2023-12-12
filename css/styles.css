@@ -56,7 +56,7 @@ body {
   width: 15%;
   height: auto;
   padding: 10px;
-  z-index: 999 !important;
+  z-index: -999 !important;
 }
 
 @keyframes slideDown {
@@ -100,7 +100,7 @@ body {
 
 /* ============== start about page ===========  */
 .container {
-  margin: 8rem 1rem;
+  margin: 3rem 1rem;
 }
 
 .heading p {
@@ -113,15 +113,16 @@ body {
   text-transform: uppercase;
 }
 
-.contents p:first-letter {
+/* .contents p:first-letter {
   text-transform: uppercase;
   font-size: 28px;
   color: #6aaf45;
-}
+} */
 
 .contents p {
   font-size: 17px;
-  font-weight: 600;
+  /* font-weight: 600; */
+  margin: 15px;
   color: #077bb7;
 }
 .contents b {
@@ -250,8 +251,14 @@ footer .right {
   color: #077bb7;
   width: 10px;
   height: 10px;
-  text-decoration: underline;
+}
 
+.right h4{
+  text-decoration: underline;
+}
+.right  p{
+  color: #68a943;
+  font-weight: 600;
 }
 .right h4{
   font-size: 1.5rem;
@@ -362,6 +369,15 @@ ol {
 /* Term and condition page end */
 
 
+/* start membership page for css */
+.membership-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  /* padding-bottom: 100px; */
+}
+/* end membership page for css */
 
 
 
@@ -398,6 +414,17 @@ ol {
   .about p {
     margin: 0 auto;
   }
+
+  .top-bar {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+  }
+  /* footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+  } */
 }
 
 /* for tablet  */
@@ -405,4 +432,93 @@ ol {
   
 
 } */
+
+
+/* start for .gallery css  */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #6aaf45;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+  .gallery img {
+      width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery img {
+      width: calc(33.33% - 20px);
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery img {
+      width: calc(25% - 20px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery img {
+      width: calc(16.66% - 20px);
+  }
+}
+
+/* end for .gallery css  */
+
+/* start sitemap css  */
+.sitemap h1 {
+  text-align: center;
+}
+
+.sitemap ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sitemap li {
+  margin-bottom: 15px;
+}
+
+.sitemap a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.sitemap a:hover {
+  color: #007BFF;
+}
+
+/* Add responsive styles */
+@media only screen and (max-width: 600px) {
+  .sitemap li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Thread styles */
+.sitemap .thread {
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.sitemap .thread a {
+  color: #555;
+  font-weight: normal;
+}
+/* End sitemap css  */
 
