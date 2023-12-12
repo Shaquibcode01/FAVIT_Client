@@ -493,3 +493,31 @@ ol {
 }
 /* End sitemap css  */
 
+
+/* start for .gallery css  */
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-container img {
+  width: 23%; /* Set the width to 23% to fit 4 images in one row */
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #6aaf45;
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.photo-container img:hover {
+  transform: scale(1.2); /* Scale in on hover */
+}
+
+@media (max-width: 768px) {
+  .photo-container img {
+      width: 100%; /* Adjust width for smaller screens */
+  }
+}
+/* end for .gallery css  */
+
