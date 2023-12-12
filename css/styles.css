@@ -249,8 +249,8 @@ footer .right {
 }
 .right{
   color: #077bb7;
-  width: 10px;
-  height: 10px;
+  /* width: 10px;
+  height: 10px; */
 }
 
 .right h4{
@@ -258,7 +258,6 @@ footer .right {
 }
 .right  p{
   color: #68a943;
-  font-weight: 600;
 }
 .right h4{
   font-size: 1.5rem;
@@ -415,67 +414,39 @@ ol {
     margin: 0 auto;
   }
 
-  .top-bar {
+  /* .top-bar {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
-  }
+  } */
   /* footer {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
   } */
-}
-
-/* for tablet  */
-/* @media (max-width:960px) {
-  
-
-} */
-
-
-/* start for .gallery css  */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 20px;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  border: 2px solid #6aaf45;
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 576px) {
-  .gallery img {
-      width: calc(50% - 20px);
+  footer .left {
+    width: 100%;
+  }
+  .top-bar {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+  .footer-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .social-icon img {
+    width: 43px;
+    height: auto;
+    margin-right: 7px;
+  }
+  footer .right {
+    width: 100%;
   }
 }
 
-@media (min-width: 768px) {
-  .gallery img {
-      width: calc(33.33% - 20px);
-  }
-}
-
-@media (min-width: 992px) {
-  .gallery img {
-      width: calc(25% - 20px);
-  }
-}
-
-@media (min-width: 1200px) {
-  .gallery img {
-      width: calc(16.66% - 20px);
-  }
-}
-
-/* end for .gallery css  */
 
 /* start sitemap css  */
 .sitemap h1 {
